@@ -8,19 +8,37 @@ DominoGraph graph = new DominoGraph();
 //{
 //    Console.WriteLine(v + " " + v.Edges.Count);
 //}
-Console.WriteLine("введите наминал 2-ух сторон 1 доминошки");
+Console.WriteLine("какую по размераим матрицу вы хотите сделать?введите число от 1,до 28");
+int t = int.Parse(Console.ReadLine());
+for (int q = 0; q < t; q++)
+{
+    Console.WriteLine("введите наминал 2-ух сторон 1 доминошки");
+    int i = int.Parse(Console.ReadLine());
+    string n = i.ToString();
+    if (i < 7)
+    {
+        graph.AddVertex(n);
+    }
+    else
+    {
+        Console.WriteLine("номинал доминошки больше чем возможный(6)");
+    }
 
-int i = int.Parse(Console.ReadLine());
-if (i <= 7)
-{
-    
+    int j = int.Parse(Console.ReadLine());
+    string x = j.ToString();
+    if (j < 7)
+    {
+        graph.AddVertex(x);
+    }
+    else
+    {
+        Console.WriteLine("номинал доминошки больше чем возможный(6)");
+    }
+    graph.AddEdge(x, n);
+
 }
-int j = int.Parse(Console.ReadLine());
-if (j <= 7)
-{
-    
-}
+Console.WriteLine("вы создали матрицу,ее текущий вид:");
 foreach (var v in graph.vertices)
 {
-    Console.WriteLine(v + " " + v.Edges.Count);
+    Console.Write(v);
 }
