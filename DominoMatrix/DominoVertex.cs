@@ -11,11 +11,15 @@ namespace DominoMatrix
         //вершина(точки)
         public string Name { get; }
         public List<DominoEdge> Edges { get;}
+        public int Name1 { get; }
+
         public DominoVertex(string name)
         {
             Name = name;
             Edges = new List<DominoEdge>();
         }
+
+
         public void AddEdge(DominoEdge newEdge)//добавление ребер
         {
             Edges.Add(newEdge);

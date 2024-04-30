@@ -12,8 +12,8 @@ namespace DominoMatrix
         public DominoVertex ConVertex { get; }
        
 
-        public DominoEdge(DominoVertex convertex)//конструктор класса DominoEdge, который принимает один аргумент типа DominoVertex и присваивает его полю ConVertex класса DominoEdge.
-        {
+        public DominoEdge(DominoVertex convertex)//конструктор класса DominoEdge,
+        {                                         //который принимает один аргумент типа DominoVertex и присваивает его полю ConVertex класса DominoEdge.
             ConVertex = convertex;
         }
     }
