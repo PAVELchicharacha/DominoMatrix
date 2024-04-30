@@ -9,12 +9,12 @@ DominoGraph graph = new DominoGraph();
 //    Console.WriteLine(v + " " + v.Edges.Count);
 //}
 Console.WriteLine("какую по размераим матрицу вы хотите сделать?введите число от 1,до 28");
-int t = int.Parse(Console.ReadLine());
+int t = int.Parse(Console.ReadLine());//выюор размера матрицы
 for (int q = 0; q < t; q++)
 {
     Console.WriteLine("введите наминал 2-ух сторон 1 доминошки");
     int i = int.Parse(Console.ReadLine());
-    string n = i.ToString();
+    string n = i.ToString();//надо,что бы работало
     if (i < 7)
     {
         graph.AddVertex(n);
@@ -25,7 +25,7 @@ for (int q = 0; q < t; q++)
     }
 
     int j = int.Parse(Console.ReadLine());
-    string x = j.ToString();
+    string x = j.ToString();//надо,что бы работало
     if (j < 7)
     {
         graph.AddVertex(x);
